@@ -1,0 +1,45 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+
+body {
+    font-family: sans-serif;
+}
+
+.border {
+    border: 2px dashed black;
+}
+
+/* Layout */
+
+.top-container {
+    display: flex;
+}
+
+
+.prova-main {
+    background-color: yellow;
+    width: 80%;
+    height: calc(100vh - 10vh);
+}
+
+aside {
+    background-color: green;
+    width: 20%;
+}
+
+
+.prova-header {
+    height: calc(100vh - 90vh);
+    background-color: rgba(111, 2, 2, 0.373)
+}
+
+.prova-footer {
+    height: 100px;
+    background-color: blue;
+}
