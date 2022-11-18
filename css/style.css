@@ -9,6 +9,7 @@
 
 body {
     font-family: sans-serif;
+    font-size: 13px;
 }
 
 .border {
@@ -17,6 +18,12 @@ body {
 
 
 /* Layout */
+
+.container {
+    max-width: 500px;
+
+}
+
 
 .top-container {
     display: flex;
@@ -27,27 +34,46 @@ body {
 
 /* Sidebar */
 
-aside {
+#side-nav {
     background-color: green;
     width: 10%;
 }
 
-aside > * {
+#side-nav img {
     padding-top: 5px;
     margin: 0 auto;
 }
 
 #logo {
-    width: 80%;
+    width: 50%;
+    padding-top: 5px;
+    margin: 0 auto;
 }
 
 ul {
     list-style-type: none;
+}
+
+a > span {
+    display: none;
 
 }
 
-.fa-li {
+a {
+    text-decoration: none;
+    color: gray;
+}
 
+figure > a {
+    display: none;
+}
+
+.text-display a {
+    display: none;
+}
+
+#side-nav img {
+    width: 50%;
 }
 
 /* Header */
@@ -74,8 +100,6 @@ header {
 .playlist {
 
     padding-top: 80px;
-
-    position: relative;
 
     overflow-y: scroll;
 
