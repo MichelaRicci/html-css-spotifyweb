@@ -9,8 +9,6 @@
 
 body {
     font-family: sans-serif;
-    font-size: 12px;
-
     color: #ffffff;
 }
 
@@ -25,11 +23,10 @@ body {
     height: 100vh;
 }
 
-
 .top-container {
     display: flex;
     background-color: #141922;
-    height: calc(100vh - 5vh);
+    height: calc(100vh - 10vh);
 }
 
 /* Margin  */
@@ -40,13 +37,18 @@ body {
 #side-nav {
     background-color: #000000;
     width: 7%;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #side-nav img {
     width: 100%;
-    padding: 5px 8px;
+    padding-top: 7px;
+    padding-right: 8px;
 }
 
 #logo-small {
@@ -78,7 +80,7 @@ a {
     background-color: gray;
 }
 
-.circle img {
+.circle > img {
     width: 100%;
     object-fit: contain;
 }
@@ -104,15 +106,10 @@ figure > a {
 }
 
 .side-nav-center h2 {
-    margin: 10px 0px;
     font-size: 15px;
     text-transform: uppercase;
 
     display: none;
-}
-
-.side-nav-bottom {
-    padding-top: 400px;
 }
 
 .side-nav-bottom h4 {
@@ -152,7 +149,7 @@ header {
 /* Footer */
 
 footer {
-    height: 80px;
+    height: 10vh;
     width: 100%;
     background-color: #282828;
 
@@ -173,7 +170,7 @@ footer {
 
     #side-nav {
         width: 30%;
-        font-size: 15px;
+        font-size: 10px;
 
         text-align: left;
     }
@@ -188,8 +185,8 @@ footer {
 
     #side-nav img {
         width: 30px;
-        margin-left: -10px;
 
+        line-height: 30px;        
         vertical-align: middle;
     }
 
@@ -227,19 +224,6 @@ footer {
         margin-right: 10px;
     }
 
-    .side-nav-bottom {
-        padding-top: 340px;
-        padding-left: 8px;
-    }
-
-    .side-nav-bottom h4 {
-        display: inline-block;
-    }
-    
-    .circle img {
-        width: 100%;
-        margin: 0 auto;
-    }
 
     ul {
         text-align: left;
@@ -248,5 +232,29 @@ footer {
     .text-display li {
         padding-top: 15px;
     }
+
+    .side-nav-bottom {
+        padding-left: 8px;
+    }
+
+    .side-nav-bottom h4 {
+        display: inline-block;
+    }
+    
+    .circle {
+        margin-top: 5px;
+    }
+
+    .circle > img {
+        padding: 0;
+
+    }
+
+    .download {
+        border-bottom: 1px solid gray;
+
+        padding: 5px 8px;
+    }
+
 }
     
