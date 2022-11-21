@@ -17,6 +17,7 @@ body {
 }
 
 .btn {
+    display: inline-block;
     padding: 10px 30px;
     border-radius: 20px;
     border: 1px solid #ffffff;
@@ -249,7 +250,7 @@ footer {
 
 /* Responsive */
 
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 540px) {
 
     /* Sidebar */
 
@@ -345,10 +346,23 @@ footer {
         vertical-align: middle;
     }
 
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .album-card {
+        flex-basis: calc(100% / 4);
+    }
+
+}
+
+
+@media screen and (min-width: 1000px) {
     .album-card {
         flex-basis: calc(100% / 6);
     }
-
-
+    
 }
     
+
