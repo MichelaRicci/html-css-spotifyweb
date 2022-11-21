@@ -22,7 +22,7 @@ body {
     border: 1px solid #ffffff;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 a {
@@ -35,6 +35,16 @@ main {
     overflow: auto;
 }
 
+span {
+    color: gray;
+    font-size: 10px;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+
 /* Layout */
 
 .top-container {
@@ -44,13 +54,18 @@ main {
 }
 
 /* Margin  */
- .mt-40 {
-    margin-top: 40px;
- }
 
- .mtb-20 {
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mtb-20 {
     margin: 20px 0;
- }
+}
 
 /* Sidebar */
 
@@ -63,6 +78,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    overflow: auto;
 }
 
 .side-nav-list img {
@@ -200,7 +217,7 @@ header {
 
 .menu-bar li { 
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
 }
 
@@ -228,6 +245,7 @@ header {
 
 .album-pic {
     position: relative;
+    padding-bottom: 10px;
 
 }
 
@@ -235,7 +253,7 @@ header {
     width: 100%;
 }
 
-.album-text > * {
+.album-text > h3 {
     font-size: 12px;
 }
 
