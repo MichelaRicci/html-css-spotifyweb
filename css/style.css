@@ -48,8 +48,8 @@ main {
     margin-top: 40px;
  }
 
- .mb-20 {
-    margin-bottom: 20px;
+ .mtb-20 {
+    margin: 20px 0;
  }
 
 /* Sidebar */
@@ -67,6 +67,7 @@ main {
 
 .side-nav-list img {
     width: 100%;
+    padding: 5px;
 }
 
 #logo-small {
@@ -102,6 +103,14 @@ ul {
     padding: 0;
 }
 
+.download img {
+    width: 20px;
+
+    line-height: 20px;        
+    vertical-align: middle;
+}
+
+
 /* Display none in mobile version */
 
 #logo {
@@ -133,7 +142,17 @@ figure > a {
     display: none;
 }
 
+.download > a {
+    padding-left: 5px;
+}
 
+.user-box {
+    padding: 10px 5px;
+}
+
+.user-box > h4 {
+    padding-left: 5px;
+}
 
 /* Header */
 
@@ -184,6 +203,7 @@ header {
     font-size: 12px;
     font-weight: bold;
 }
+
 
 
 /* Album gallery  */
@@ -298,6 +318,8 @@ footer {
 
     .side-nav-center h2{
         display: block;
+        font-size: 15px;
+        padding-bottom: 10px;
     }
 
     .side-nav-center span::before{
@@ -321,7 +343,7 @@ footer {
     }
 
     .side-nav-bottom {
-        padding-left: 8px;
+        padding: 8px;
     }
 
     .side-nav-bottom h4 {
@@ -334,15 +356,6 @@ footer {
 
     .download {
         border-bottom: 1px solid gray;
-
-        padding: 5px 8px;
-    }
-
-    .download img {
-        width: 30px;
-
-        line-height: 30px;        
-        vertical-align: middle;
     }
 
 }
