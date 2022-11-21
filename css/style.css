@@ -287,8 +287,7 @@ figure:hover .fa-play-circle {
 .circle-pic {
     display: inline-block;
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
+    flex-basis: 100%;
 
     margin: 0 auto;
 
