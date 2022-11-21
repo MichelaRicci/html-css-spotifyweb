@@ -16,6 +16,13 @@ body {
     border: 2px dashed #ffffff;
 }
 
+.btn {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+}
 
 /* Layout */
 
@@ -26,11 +33,15 @@ body {
 .top-container {
     display: flex;
     background-color: #141922;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 100px);
+
+    overflow: auto;
 }
 
 /* Margin  */
-
+ .mt-40 {
+    margin-top: 40px;
+ }
 
 /* Sidebar */
 
@@ -125,39 +136,99 @@ header {
     width: 100%;
     background-color: #090B12;
 
-    position: fixed;
+    position: sticky;
     top: 0;
-
-    z-index: 1;
+    right: 0;
 
     overflow: hidden;
+}
+
+.btn-upgrade {
+    position: absolute;
+    top: 32px;
+    left: 45%;
 }
 
 
 
 /* Playlist */
 
-
 .playlist {
 
-    padding-top: 80px;
+    padding-top: 100px;
+
+    padding-left: 10px;
 
     overflow-y: scroll;
 }
 
+.menu-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.menu-bar li > a { 
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+
+/* Album gallery  */
+
+.music-gallery {
+    text-align: center;
+
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.album-card {
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 15px;
+}
+
+.album-pic {
+    position: relative;
+
+}
+
+.album-pic > img {
+    width: 100%;
+}
+
+.album-text > * {
+    font-size: 12px;
+}
+
+
+figure > .fa-play-circle {
+    opacity: 0;
+    font-size: 50px;
+    position: absolute;
+
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+}
+
+figure:hover .fa-play-circle {
+    opacity: 1;
+
+
+}
 
 /* Footer */
 
 footer {
-    height: 10vh;
+    height: 100px;
     width: 100%;
     background-color: #282828;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-
-    z-index: 1;
 }
 
 
