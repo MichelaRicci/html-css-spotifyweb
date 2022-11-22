@@ -79,7 +79,8 @@ span {
     flex-direction: column;
     justify-content: space-between;
 
-    overflow: auto;
+
+    overflow: hidden;
 }
 
 .side-nav-list img {
@@ -95,6 +96,10 @@ span {
 ul {
     list-style-type: none;
     text-align: center;
+}
+
+.side-nav-bottom {
+    height: 90px;
 }
 
 .circle {
@@ -154,6 +159,11 @@ figure > a {
 
     display: none;
 }
+
+.side-nav-center {
+    overflow-y: auto;
+}
+
 
 .side-nav-bottom h4 {
     display: none;
@@ -273,8 +283,14 @@ figure > .fa-play-circle {
 figure:hover .fa-play-circle {
     opacity: 1;
 
-
 }
+
+/* .music-gallery .album-pic {
+    transition: tranform 0.5s;
+}
+.music-gallery .album-pic:hover {
+    transform: scale(1.05) translateY(-10px);
+} */
 
 /* Circle pic */
 
@@ -310,36 +326,56 @@ footer i {
     padding: 0 10px;
 }
 
-.footer-navbar {
+.footer-controls {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.left-nav {
-    width: 180px;
+.left-controls, .right-controls {
+    width: 230px;
     height: 100%;
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
 }
 
-.card-x {
+.card-xs {
     display: flex;
     align-items: center;
 }
 
 .album-pic-small > img {
-    width: 100%; 
+    max-width: 70%; 
+    padding: 20px;
 }
 
-.card-x-text {
 
-}
 .album-icons {
     display: flex;
     flex-direction: column;
+}
+
+
+.player {
+    flex-basis: 60%;
+
+}
+
+.player-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 20px;
+
+}
+
+.player-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -365,27 +401,6 @@ footer i {
     border-radius: 5px;
     position: relative;
 }
-
-.player-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.volume {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    width: 300px;
-    height: 100%;
-    padding: 10px;
-
-}
-
-
-
-
 
 /* Responsive */
 
@@ -436,13 +451,13 @@ footer i {
   
     }
 
-    .side-nav-center h2{
+    .side-nav-top h2{
         display: block;
         font-size: 15px;
-        padding-bottom: 10px;
+        padding: 10px 0;
     }
 
-    .side-nav-center span::before{
+    .side-nav-top .crea::before{
         content: "+";
         background-color: rgba(255, 255, 255, 0.5);
         color: #000000;
