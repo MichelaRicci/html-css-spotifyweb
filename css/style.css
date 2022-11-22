@@ -298,6 +298,8 @@ figure:hover .fa-play-circle {
     object-fit: contain;
     height: 100%;
     width: 100%;
+
+    display: inline-block;
 }
 
 .circle-pic {
@@ -319,6 +321,12 @@ footer {
     height: 100px;
     width: 100%;
     background-color: #282828;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 
 footer i {
@@ -326,16 +334,11 @@ footer i {
     padding: 0 10px;
 }
 
-.footer-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .left-controls, .right-controls {
     width: 230px;
     height: 100%;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -346,9 +349,13 @@ footer i {
     align-items: center;
 }
 
-.album-pic-small > img {
-    max-width: 70%; 
+.album-pic-small{
     padding: 20px;
+}
+
+.album-pic-small > img {
+    width: 50px;
+    display: block;
 }
 
 
@@ -412,7 +419,7 @@ footer i {
     /* Sidebar */
 
     .side-nav {
-        width: 900px;
+        width: 300px;
         font-size: 10px;
 
         text-align: left;
