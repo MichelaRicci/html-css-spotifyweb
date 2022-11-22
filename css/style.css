@@ -300,7 +300,7 @@ figure:hover .fa-play-circle {
 /* Circle pic */
 
 .circle-pic > img {
-    display: inline-block;
+    display: block;
 
     object-fit: contain;
     height: 100%;
