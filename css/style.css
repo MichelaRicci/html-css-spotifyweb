@@ -186,6 +186,8 @@ figure > a {
     padding-left: 5px;
 }
 
+
+
 /* Header */
 
 header {
@@ -207,7 +209,6 @@ header {
 
     padding: 0 30px;
 }
-
 
 
 
@@ -237,6 +238,10 @@ header {
     padding: 0 10px;
 }
 
+.menu-bar a:hover {
+    color: #ffffff;
+    /* border-bottom: 3px solid #86C630; */
+  }
 
 
 /* Album gallery  */
@@ -289,6 +294,7 @@ figure:hover .fa-play-circle {
     opacity: 1;
 
 }
+
 
 /* .music-gallery .album-pic {
     transition: tranform 0.5s;
